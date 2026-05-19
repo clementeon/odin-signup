@@ -1,0 +1,129 @@
+@font-face {
+	font-family: "Merriweather";
+	src: url(../fonts/merriweather.woff2) format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+
+}
+
+body {
+	font-family: "Merriweather", serif;
+	background-color: #191919;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+.background {
+	position: relative;
+	overflow: hidden;
+	max-width: 80vw;
+	max-height: 80vh;
+	border-radius: 20px;
+}
+
+.background img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.signup {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 50%;
+	backdrop-filter: blur(8px);
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5vh;
+	padding: 3vh 0vh;
+}
+
+h1,
+label,
+p {
+	color: white;
+}
+
+.form-row {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.member-name.form-row,
+.member-skill.form-row,
+.submit-button.form-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.question-form {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 3vh;
+}
+
+button {
+	font-family: inherit;
+	font-size: inherit;
+	width: 8em;
+	display: flex;
+	justify-content: center;
+	
+}
+
+input {
+	font-family: inherit;
+	font-weight: light;
+	font-size: large;
+	border-radius: 5px;
+	box-shadow: none;
+	border: 2px solid grey;
+	height: 40px;
+	width: auto;
+}
+
+.member-skill {
+	display: flex;
+	align-items: center;
+}
+
+select {
+	text-align: center;
+	height: 40px;
+	width: 60px;
+	border-radius: 5px;
+	
+}
+
+.member-info.form-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#fname,
+#lname {
+	width: 8vw;
+}
+
+input,
+select {
+	padding: 8px;
+	border-radius: 6px;
+	border: 1px solid #ccc;
+}
